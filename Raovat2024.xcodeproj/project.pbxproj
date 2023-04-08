@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A82589D529E15AF6008F9E49 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82589D429E15AF6008F9E49 /* Config.swift */; };
 		A840E77329E04BD7001712A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A840E77229E04BD7001712A1 /* AppDelegate.swift */; };
 		A840E77529E04BD7001712A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A840E77429E04BD7001712A1 /* SceneDelegate.swift */; };
 		A840E77729E04BD7001712A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A840E77629E04BD7001712A1 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A82589D429E15AF6008F9E49 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		A840E76F29E04BD7001712A1 /* Raovat2024.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Raovat2024.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A840E77229E04BD7001712A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A840E77429E04BD7001712A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				A840E77B29E04BD9001712A1 /* Assets.xcassets */,
 				A840E77D29E04BD9001712A1 /* LaunchScreen.storyboard */,
 				A840E78029E04BD9001712A1 /* Info.plist */,
+				A82589D429E15AF6008F9E49 /* Config.swift */,
 			);
 			path = Raovat2024;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			files = (
 				A840E77729E04BD7001712A1 /* ViewController.swift in Sources */,
 				A840E77329E04BD7001712A1 /* AppDelegate.swift in Sources */,
+				A82589D529E15AF6008F9E49 /* Config.swift in Sources */,
 				A840E77529E04BD7001712A1 /* SceneDelegate.swift in Sources */,
 				A840E78A29E05178001712A1 /* Register_ViewController.swift in Sources */,
 			);

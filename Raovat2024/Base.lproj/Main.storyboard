@@ -16,24 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cmt-b0-Sat">
-                                <rect key="frame" x="16" y="655" width="122" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="PhotoGallery"/>
-                                <connections>
-                                    <action selector="ChooseImageFRomPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TAC-wJ-PO1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGr-Xl-WtF">
-                                <rect key="frame" x="267" y="655" width="79" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Upload"/>
-                                <connections>
-                                    <action selector="UploadImageToServer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D2l-AH-hhc"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DANG KY THANH VIEN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqh-hZ-66A">
                                 <rect key="frame" x="57.666666666666657" y="57" width="275" height="32.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
@@ -88,6 +70,10 @@
                                     <outletCollection property="gestureRecognizers" destination="ml2-AZ-Y3x" appends="YES" id="Lsj-xc-7UZ"/>
                                 </connections>
                             </imageView>
+                            <activityIndicatorView opaque="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="7Tg-SJ-mHC">
+                                <rect key="frame" x="0.0" y="6.6666666666666856" width="390" height="844"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -95,20 +81,24 @@
                             <constraint firstItem="gqh-hZ-66A" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="1bL-Ag-2hl"/>
                             <constraint firstItem="hkB-s4-oZX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ANP-QC-9ec"/>
                             <constraint firstItem="XPH-Np-yYO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="B40-ab-sb1"/>
+                            <constraint firstItem="7Tg-SJ-mHC" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="BNg-oD-MRQ"/>
                             <constraint firstItem="1bI-KX-gde" firstAttribute="top" secondItem="XPH-Np-yYO" secondAttribute="bottom" constant="10" id="BrB-uO-wgG"/>
                             <constraint firstItem="hkB-s4-oZX" firstAttribute="top" secondItem="awC-xC-8bi" secondAttribute="bottom" constant="10" id="Fr5-yZ-tEG"/>
+                            <constraint firstItem="7Tg-SJ-mHC" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="GET-El-4kL"/>
                             <constraint firstItem="yDN-L5-3eI" firstAttribute="width" secondItem="Hek-7l-ObE" secondAttribute="width" multiplier="1:1" id="Gsc-RH-ieg"/>
                             <constraint firstItem="2xB-7F-Tig" firstAttribute="width" secondItem="Hek-7l-ObE" secondAttribute="width" id="Il7-py-C6C"/>
                             <constraint firstItem="yDN-L5-3eI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Inn-ps-CRD"/>
                             <constraint firstItem="rCE-zv-YjP" firstAttribute="top" secondItem="Hek-7l-ObE" secondAttribute="bottom" constant="10" id="M6d-VV-G3v"/>
                             <constraint firstItem="yDN-L5-3eI" firstAttribute="top" secondItem="rCE-zv-YjP" secondAttribute="bottom" constant="10" id="Mya-yl-sbN"/>
                             <constraint firstItem="rCE-zv-YjP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NWo-6O-ZhR"/>
+                            <constraint firstItem="7Tg-SJ-mHC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PYa-DJ-07y"/>
                             <constraint firstItem="Hek-7l-ObE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Pfq-Zz-kev"/>
                             <constraint firstItem="1bI-KX-gde" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Pzm-UF-GaB"/>
                             <constraint firstItem="awC-xC-8bi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="SeN-4w-wel"/>
                             <constraint firstItem="hkB-s4-oZX" firstAttribute="width" secondItem="Hek-7l-ObE" secondAttribute="width" id="UVz-Sm-gmu"/>
                             <constraint firstItem="2xB-7F-Tig" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Xmz-lv-HIA"/>
                             <constraint firstItem="2xB-7F-Tig" firstAttribute="top" secondItem="yDN-L5-3eI" secondAttribute="bottom" constant="10" id="ad4-fT-6xk"/>
+                            <constraint firstItem="7Tg-SJ-mHC" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="d3y-FE-tcY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hek-7l-ObE" secondAttribute="trailing" constant="20" id="fdv-TX-Vua"/>
                             <constraint firstItem="gqh-hZ-66A" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gMy-3K-7Yn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XPH-Np-yYO" secondAttribute="trailing" constant="80" id="gkG-VN-OSo"/>
@@ -122,6 +112,7 @@
                     </view>
                     <connections>
                         <outlet property="imgAvatar" destination="XPH-Np-yYO" id="t1H-g5-1wd"/>
+                        <outlet property="mySpinner" destination="7Tg-SJ-mHC" id="Y0w-XD-Drl"/>
                         <outlet property="txt_DiaChi" destination="awC-xC-8bi" id="Zfk-sG-tVt"/>
                         <outlet property="txt_DienThoai" destination="hkB-s4-oZX" id="OqO-gF-I8p"/>
                         <outlet property="txt_Email" destination="2xB-7F-Tig" id="44g-bV-drQ"/>
